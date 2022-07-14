@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const props = defineProps<{
-  imgFile: File;
+  imageFile: File;
 }>();
-const imgSrc = URL.createObjectURL(props.imgFile);
+const imgSrc = URL.createObjectURL(props.imageFile);
 </script>
 
 <template><img :src="imgSrc" /></template>
